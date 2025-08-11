@@ -24,7 +24,7 @@ A responsive product grid showcasing Epicutis skincare products, designed for ea
 4. Update product links to your actual product pages
 
 ### Live Demo:
-View the grid at: https://[your-username].github.io/melanies-embed/
+View the grid at: https://ChrolloAce.github.io/melanies-embed/product-grid.html
 
 ## Customization
 
