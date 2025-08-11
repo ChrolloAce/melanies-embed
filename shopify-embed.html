@@ -1,0 +1,234 @@
+<style>
+.epicutis-grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.epicutis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.epicutis-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.epicutis-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.epicutis-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background: #f8f9fa;
+}
+
+.epicutis-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.epicutis-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.epicutis-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.epicutis-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c5530;
+    margin-bottom: 15px;
+}
+
+.epicutis-btn {
+    background: #2c5530;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.epicutis-btn:hover {
+    background: #1e3a21;
+}
+
+@media (max-width: 768px) {
+    .epicutis-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+    .epicutis-grid-container { padding: 15px; }
+    .epicutis-image { height: 250px; }
+    .epicutis-info { padding: 15px; }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .epicutis-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1025px) {
+    .epicutis-grid { grid-template-columns: repeat(4, 1fr); }
+}
+</style>
+
+<div class="epicutis-grid-container">
+    <div class="epicutis-grid">
+        <!-- Product 1: Luxury Skincare Set -->
+        <a href="https://epicutis.com/products/luxury-skincare-set" class="epicutis-card" target="_blank">
+            <img src="https://your-shopify-store.com/files/Luxury_Skincare_Set_Products.webp" alt="Luxury Skincare Set" class="epicutis-image">
+            <div class="epicutis-info">
+                <h3 class="epicutis-title">Luxury Skincare Set</h3>
+                <p class="epicutis-description">Complete skincare routine with premium ingredients</p>
+                <div class="epicutis-price">$395</div>
+                <button class="epicutis-btn">Shop Now</button>
+            </div>
+        </a>
+
+        <!-- Product 2: Cleansing Essentials Set -->
+        <a href="https://epicutis.com/products/cleansing-essentials-set" class="epicutis-card" target="_blank">
+            <img src="https://your-shopify-store.com/files/Cleansing_Essentials_Set_Products.webp" alt="Cleansing Essentials Set" class="epicutis-image">
+            <div class="epicutis-info">
+                <h3 class="epicutis-title">Cleansing Essentials Set</h3>
+                <p class="epicutis-description">Gentle yet effective cleansing duo</p>
+                <div class="epicutis-price">$105</div>
+                <button class="epicutis-btn">Shop Now</button>
+            </div>
+        </a>
+
+        <!-- Product 3: Oil Cleanser -->
+        <a href="https://epicutis.com/products/oil-cleanser" class="epicutis-card" target="_blank">
+            <img src="https://your-shopify-store.com/files/Oil_Cleanser.webp" alt="Oil Cleanser" class="epicutis-image">
+            <div class="epicutis-info">
+                <h3 class="epicutis-title">Oil Cleanser</h3>
+                <p class="epicutis-description">Deep cleansing oil for makeup removal</p>
+                <div class="epicutis-price">$85</div>
+                <button class="epicutis-btn">Shop Now</button>
+            </div>
+        </a>
+
+        <!-- Product 4: Lipid Serum -->
+        <a href="https://epicutis.com/products/lipid-serum" class="epicutis-card" target="_blank">
+            <img src="https://your-shopify-store.com/files/Lipid_Serum.webp" alt="Lipid Serum" class="epicutis-image">
+            <div class="epicutis-info">
+                <h3 class="epicutis-title">Lipid Serum</h3>
+                <p class="epicutis-description">Intensive hydrating and barrier repair serum</p>
+                <div class="epicutis-price">$165</div>
+                <button class="epicutis-btn">Shop Now</button>
+            </div>
+        </a>
+
+        <!-- Product 5: Hyvia Creme -->
+        <a href="https://epicutis.com/products/hyvia-creme" class="epicutis-card" target="_blank">
+            <img src="https://your-shopify-store.com/files/Hyvia_Creme.webp" alt="Hyvia Creme" class="epicutis-image">
+            <div class="epicutis-info">
+                <h3 class="epicutis-title">Hyvia Creme</h3>
+                <p class="epicutis-description">Rich moisturizing cream for dry skin</p>
+                <div class="epicutis-price">$125</div>
+                <button class="epicutis-btn">Shop Now</button>
+            </div>
+        </a>
+
+        <!-- Product 6: ABT-TP Shadow -->
+        <a href="https://epicutis.com/products/abt-tp-shadow" class="epicutis-card" target="_blank">
+            <img src="https://your-shopify-store.com/files/ABT-TP_shadow.webp" alt="ABT-TP Shadow" class="epicutis-image">
+            <div class="epicutis-info">
+                <h3 class="epicutis-title">ABT-TP Shadow</h3>
+                <p class="epicutis-description">Advanced biome treatment with peptides</p>
+                <div class="epicutis-price">$195</div>
+                <button class="epicutis-btn">Shop Now</button>
+            </div>
+        </a>
+
+        <!-- Product 7: Hydrobiome Mist -->
+        <a href="https://epicutis.com/products/hydrobiome-mist" class="epicutis-card" target="_blank">
+            <img src="https://your-shopify-store.com/files/HydrobiomeMist.webp" alt="Hydrobiome Mist" class="epicutis-image">
+            <div class="epicutis-info">
+                <h3 class="epicutis-title">Hydrobiome Mist</h3>
+                <p class="epicutis-description">Refreshing hydrating facial mist</p>
+                <div class="epicutis-price">$75</div>
+                <button class="epicutis-btn">Shop Now</button>
+            </div>
+        </a>
+
+        <!-- Product 8: Lipid Body Treatment -->
+        <a href="https://epicutis.com/products/lipid-body-treatment" class="epicutis-card" target="_blank">
+            <img src="https://your-shopify-store.com/files/Lipid_Body_Treatment.webp" alt="Lipid Body Treatment" class="epicutis-image">
+            <div class="epicutis-info">
+                <h3 class="epicutis-title">Lipid Body Treatment</h3>
+                <p class="epicutis-description">Nourishing body moisturizer with lipids</p>
+                <div class="epicutis-price">$95</div>
+                <button class="epicutis-btn">Shop Now</button>
+            </div>
+        </a>
+
+        <!-- Product 9: Lipid Recovery Mask - Face -->
+        <a href="https://epicutis.com/products/lipid-recovery-mask-face" class="epicutis-card" target="_blank">
+            <img src="https://your-shopify-store.com/files/Lipid_Recovery_Mask_for_Face_Pouch_Stack.webp" alt="Lipid Recovery Mask for Face" class="epicutis-image">
+            <div class="epicutis-info">
+                <h3 class="epicutis-title">Lipid Recovery Mask - Face</h3>
+                <p class="epicutis-description">Intensive recovery mask for facial skin</p>
+                <div class="epicutis-price">$85</div>
+                <button class="epicutis-btn">Shop Now</button>
+            </div>
+        </a>
+
+        <!-- Product 10: Lipid Recovery Mask - Neck -->
+        <a href="https://epicutis.com/products/lipid-recovery-mask-neck" class="epicutis-card" target="_blank">
+            <img src="https://your-shopify-store.com/files/Lipid_Recovery_Mask_for_Neck_and_Decollete_Pouch_Stack.webp" alt="Lipid Recovery Mask for Neck" class="epicutis-image">
+            <div class="epicutis-info">
+                <h3 class="epicutis-title">Lipid Recovery Mask - Neck</h3>
+                <p class="epicutis-description">Targeted treatment for neck and décolleté</p>
+                <div class="epicutis-price">$85</div>
+                <button class="epicutis-btn">Shop Now</button>
+            </div>
+        </a>
+
+        <!-- Product 11: Lipid Recovery Mask - Eyes -->
+        <a href="https://epicutis.com/products/lipid-recovery-mask-eyes" class="epicutis-card" target="_blank">
+            <img src="https://your-shopify-store.com/files/Epicutis_Lipid_Recovery_Mask_for_Eyes.webp" alt="Lipid Recovery Mask for Eyes" class="epicutis-image">
+            <div class="epicutis-info">
+                <h3 class="epicutis-title">Lipid Recovery Mask - Eyes</h3>
+                <p class="epicutis-description">Gentle recovery treatment for eye area</p>
+                <div class="epicutis-price">$75</div>
+                <button class="epicutis-btn">Shop Now</button>
+            </div>
+        </a>
+
+        <!-- Product 12: Recovery Care Set -->
+        <a href="https://epicutis.com/products/recovery-care-set" class="epicutis-card" target="_blank">
+            <img src="https://your-shopify-store.com/files/RECOVERY-CARE-SET-1.webp" alt="Recovery Care Set" class="epicutis-image">
+            <div class="epicutis-info">
+                <h3 class="epicutis-title">Recovery Care Set</h3>
+                <p class="epicutis-description">Complete recovery and repair skincare set</p>
+                <div class="epicutis-price">$285</div>
+                <button class="epicutis-btn">Shop Now</button>
+            </div>
+        </a>
+    </div>
+</div>
